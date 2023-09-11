@@ -90,7 +90,7 @@ export default function Login() {
                             </div>
                             <div>
                                 <div className={styles.authDiv}>
-                                    <div >Don't have an account? <Link href='/signup' className={styles.authLink}> SIGN UP</Link></div>
+                                    <div >Don&apos;t have an account? <Link href='/signup' className={styles.authLink}> SIGN UP</Link></div>
                                 </div>
                             </div>
                         </form>
