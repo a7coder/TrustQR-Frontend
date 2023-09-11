@@ -4,7 +4,7 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'next/navigation'
 import styles from './style.module.css'; 
-
+import Image from 'next/image'
 
 
 const ProductDetails = () => {
@@ -43,7 +43,7 @@ const ProductDetails = () => {
     
       fetchProductDetails();
     
-  }, []);
+  }, [params.double_encoded_identifier,params.product_id,url]);
 
   if (!product) {
     return <div>Loading...</div>;
@@ -64,7 +64,8 @@ const ProductDetails = () => {
       <div className={styles.imgCon}>
         {product[8].map((imageUrl, index) => (
           
-            <img src={imageUrl} alt={`Product Image ${index + 1}`} />
+            <Image width={250}
+            height={250}  src={imageUrl} alt={`Product Image ${index + 1}`} key={index} />
          
         ))}
       </div>

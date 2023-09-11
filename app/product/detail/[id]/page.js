@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation'
 import { useEffect, useState } from 'react';
 import { useParams } from 'next/navigation'
 import styles from './style.module.css'; // Import the CSS module
+import Image from 'next/image'
 
 const ProductDetails = () => {
   const url =process.env['DOMAIN_URL']
@@ -53,7 +54,7 @@ const ProductDetails = () => {
     
       fetchProductDetails();
     
-  }, []);
+  }, [params.id,router,url]);
 
   if (!product) {
     return <div>Loading...</div>;
@@ -74,7 +75,8 @@ const ProductDetails = () => {
       <div className={styles.imgCon}>
         {product[8].map((imageUrl, index) => (
           // <li key={index}>
-            <img src={imageUrl} alt={`Product Image ${index + 1}`} />
+            <Image width={250}
+            height={250} src={imageUrl} alt={`Product Image ${index + 1}`}  key={index}/>
           // </li>
         ))}
       </div>

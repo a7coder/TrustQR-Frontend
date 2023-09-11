@@ -17,7 +17,7 @@ const AddProduct = () => {
           router.push('/login')
           return
         }
-  },[])
+  },[router])
 
   const [formData, setFormData] = useState({
     product_id: '',

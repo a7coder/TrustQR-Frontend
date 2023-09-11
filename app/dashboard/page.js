@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react';
 import styles from './style.module.css';
 import { getApiUrl } from '../utils'
 import { useRouter } from 'next/navigation'
+import Image from 'next/image'
 
 export default function Dashboard() {
   // const proc_url =process.env['DOMAIN_URL'];
@@ -72,7 +73,7 @@ export default function Dashboard() {
 
       fetchProducts();
     }
-  }, []);
+  }, [products,router]);
 
   const handleDownloadQR = async (product) => {
     try {
@@ -153,9 +154,11 @@ export default function Dashboard() {
                   {product[8].map((imageUrl, imgIndex) => (
                     <li key={imgIndex}>
                       {console.log("URL IS ", imageUrl.trim())}
-                      <img
+                      <Image
                         src={imageUrl}
                         alt={`Product Image ${imgIndex + 1}`}
+                        width={250}
+      height={250}
                       />
                     </li>
                   ))}
@@ -163,7 +166,7 @@ export default function Dashboard() {
               </td>
               <td>
 
-                <img src="./download.png" alt="Download" onClick={() => handleDownloadQR(product)} className={styles.downloadButton} />
+                <Image src="./download.png" alt="Download" onClick={() => handleDownloadQR(product)} className={styles.downloadButton} width={250} height={250}/>
 
               </td>
             </tr>
