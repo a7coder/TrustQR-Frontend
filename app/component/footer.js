@@ -14,7 +14,7 @@ export default function Footer() {
             
             <div className={styles.github}>
                 <Link
-                    href="https://github.com/ValueHunt/"
+                    href="https://github.com/Trust-QR"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
