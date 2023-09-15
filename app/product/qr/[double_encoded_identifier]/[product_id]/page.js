@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'next/navigation'
 import styles from './style.module.css'; 
 import Image from 'next/image'
-
+import Loading from '@/app/component/loading';
 
 const ProductDetails = () => {
   const params = useParams()
@@ -47,6 +47,10 @@ const ProductDetails = () => {
 
   if (!product) {
     return <div>Loading...</div>;
+  }
+
+  if (!product) {
+    return <Loading/>;
   }
 
   return (

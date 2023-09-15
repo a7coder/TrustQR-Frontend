@@ -5,6 +5,7 @@ import Link from 'next/link';
 import styles from './login.module.css';
 import { getApiUrl } from '../utils'
 import {loginContext} from '../layout'
+import Loading from '../component/loading';
 
 export default function Login() {
     // console.log('setIdentifier', props);
@@ -62,7 +63,7 @@ export default function Login() {
         }
         setResults(null);
     }
-
+    
     return (
         <>
             <div className={styles.main_container}>

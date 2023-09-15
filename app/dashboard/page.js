@@ -7,6 +7,7 @@ import styles from './style.module.css';
 import { getApiUrl } from '../utils'
 import { useRouter } from 'next/navigation'
 import Image from 'next/image'
+import Loading from '../component/loading';
 
 export default function Dashboard() {
   // const proc_url =process.env['DOMAIN_URL'];
@@ -72,6 +73,8 @@ export default function Dashboard() {
       };
 
       fetchProducts();
+      
+    
     }
   }, [products,router]);
 
@@ -113,6 +116,10 @@ export default function Dashboard() {
       console.error('Error generating QR code:', error);
     }
   };
+
+  if (!products) {
+    return <Loading/>;
+  }
 
   return (
     <div className={styles.container}>
@@ -166,7 +173,7 @@ export default function Dashboard() {
               </td>
               <td>
 
-                <Image src="./download.png" alt="Download" onClick={() => handleDownloadQR(product)} className={styles.downloadButton} width={250} height={250}/>
+                <Image src="/download.png" alt="Download" onClick={() => handleDownloadQR(product)} className={styles.downloadButton} width={250} height={250}/>
 
               </td>
             </tr>

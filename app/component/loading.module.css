@@ -1,0 +1,48 @@
+.loaderContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .loader {
+    position: relative;
+    width: 80px; /* Adjust the width */
+    height: 80px; /* Adjust the height */
+  }
+  
+  .loaderCircle {
+    position: absolute;
+    border: 6px solid #f3f3f3; /* Light grey */
+    border-top: 6px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 100px; /* Adjust the width */
+    height: 100px; /* Adjust the height */
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+
+  @media only screen and (min-width: 300px) and (max-width: 568px) {
+
+    .loaderCircle {
+        height: 70px;
+        width: 70px;
+    }
+  }
+
+  
+@media only screen and (min-width: 230px) and (max-width: 299px) {
+    .loaderCircle {
+        height: 50px;
+        width: 50px;
+    }
+}

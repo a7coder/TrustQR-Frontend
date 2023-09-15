@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'next/navigation'
 import styles from './style.module.css'; // Import the CSS module
 import Image from 'next/image'
+import Loading from '@/app/component/loading';
 
 const ProductDetails = () => {
   const url =process.env['DOMAIN_URL']
@@ -57,7 +58,7 @@ const ProductDetails = () => {
   }, [params.id,router,url]);
 
   if (!product) {
-    return <div>Loading...</div>;
+    return <Loading/>;
   }
 
   return (
