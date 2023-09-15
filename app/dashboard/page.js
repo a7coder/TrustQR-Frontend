@@ -76,7 +76,7 @@ export default function Dashboard() {
       
     
     }
-  }, [products,router]);
+  }, []);
 
   const handleDownloadQR = async (product) => {
     try {
