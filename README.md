@@ -19,19 +19,19 @@ We have used the following technologies:
 ## [ Backend Code ] (https://github.com/a7coder/TrustQR-Backend)
 ## Screenshots
 ### Admin Dashboard
-![Admin Dashboard](https://raw.githubusercontent.com/a7coder/TrustQR/main/Screenshots/admin-dashboard.png)
+![Admin Dashboard](https://raw.githubusercontent.com/a7coder/TrustQR/dev/Screenshots/admin-dashboard.png)
 
 ### Add Product
-![Add Product](https://raw.githubusercontent.com/a7coder/TrustQR/main/Screenshots/add-product.png)
+![Add Product](https://raw.githubusercontent.com/a7coder/TrustQR/dev/Screenshots/add-product.png)
 
 ### Product Details From Admin Dashboard
-![Product Details From Admin Dashboard](https://raw.githubusercontent.com/a7coder/TrustQR/main/Screenshots/admin-product-Details.png)
+![Product Details From Admin Dashboard](https://raw.githubusercontent.com/a7coder/TrustQR/dev/Screenshots/admin-product-Details.png)
 
 ### Sample QR Image of a Product
-![Sample QR Image](https://raw.githubusercontent.com/a7coder/TrustQR/main/Screenshots/sample-qr-of-product.png)
+![Sample QR Image](https://raw.githubusercontent.com/a7coder/TrustQR/dev/Screenshots/sample-qr-of-product.png)
 
 ### Upload QR Image 
-![Upload QR Image ](https://raw.githubusercontent.com/a7coder/TrustQR/main/Screenshots/upload-qr.png)
+![Upload QR Image ](https://raw.githubusercontent.com/a7coder/TrustQR/dev/Screenshots/upload-qr.png)
 
 ### Product Details using QR
-![Product Details using QR](https://raw.githubusercontent.com/a7coder/TrustQR/main/Screenshots/product-detail-using-qr.png)
+![Product Details using QR](https://raw.githubusercontent.com/a7coder/TrustQR/dev/Screenshots/product-detail-using-qr.png)
