@@ -19,7 +19,7 @@ We have used the following technologies:
 ## [ Backend Code ] (https://github.com/a7coder/TrustQR-Backend)
 ## Screenshots
 ### Admin Dashboard
-![Admin Dashboard](https://raw.githubusercontent.com/a7coder/TrustQR/dev/Screenshots/admin-dashboard.png)
+![Admin Dashboard](https://raw.githubusercontent.com/a7coder/TrustQR-Frontend/dev/Screenshots/admin-dashboard.png)
 
 ### Add Product
 ![Add Product](https://raw.githubusercontent.com/a7coder/TrustQR-Frontend/dev/Screenshots/add-product.png)
