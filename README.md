@@ -1,34 +1,37 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Trust QR
 
-## Getting Started
+Welcome to Trust QR, an innovative website that verifies Product using QR codes. Product and User data are stored in blockchain using smart contracts. This helps to reduce counterfeiting and protect consumers. 
 
-First, run the development server:
+## About
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+This project is in the field of Blockchain Development. 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technology Stack
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+We have used the following technologies:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Frontend: Next.js
+- Backend: FastAPI
+- Blockchain: Ganache & Brownie
+- Testing: Pytest
 
-## Learn More
+## [ Frontend Code ] (https://github.com/a7coder/TrustQR-Frontend)
+## [ Backend Code ] (https://github.com/a7coder/TrustQR-Backend)
+## Screenshots
+### Admin Dashboard
+![Admin Dashboard](https://raw.githubusercontent.com/a7coder/TrustQR/main/Screenshots/admin-dashboard.png)
 
-To learn more about Next.js, take a look at the following resources:
+### Add Product
+![Add Product](https://raw.githubusercontent.com/a7coder/TrustQR/main/Screenshots/add-product.png)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Product Details From Admin Dashboard
+![Product Details From Admin Dashboard](https://raw.githubusercontent.com/a7coder/TrustQR/main/Screenshots/admin-product-Details.png)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Sample QR Image of a Product
+![Sample QR Image](https://raw.githubusercontent.com/a7coder/TrustQR/main/Screenshots/sample-qr-of-product.png)
 
-## Deploy on Vercel
+### Upload QR Image 
+![Upload QR Image ](https://raw.githubusercontent.com/a7coder/TrustQR/main/Screenshots/upload-qr.png)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Product Details using QR
+![Product Details using QR](https://raw.githubusercontent.com/a7coder/TrustQR/main/Screenshots/product-detail-using-qr.png)
